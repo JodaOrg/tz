@@ -574,7 +574,7 @@ Zone America/Argentina/Ushuaia -4:33:12 - LMT	1894 Oct 31
 			-3:00	-	-03
 
 # Aruba
-# See America/Puerto_Rico.
+# See America/Curacao.
 
 # Bolivia
 # Zone	NAME		STDOFF	RULES	FORMAT	[UNTIL]
@@ -1369,12 +1369,33 @@ Zone	America/Bogota	-4:56:16 -	LMT	1884 Mar 13
 # no information; probably like America/Bogota
 
 # Curaçao
-# See America/Puerto_Rico.
+
+# Milne gives 4:35:46.9 for Curaçao mean time; round to nearest.
 #
+# From Paul Eggert (2006-03-22):
+# Shanks & Pottenger say that The Bottom and Philipsburg have been at
+# -4:00 since standard time was introduced on 1912-03-02; and that
+# Kralendijk and Rincon used Kralendijk Mean Time (-4:33:08) from
+# 1912-02-02 to 1965-01-01.  The former is dubious, since S&P also say
+# Saba Island has been like Curaçao.
+# This all predates our 1970 cutoff, though.
+#
+# By July 2007 Curaçao and St Maarten are planned to become
+# associated states within the Netherlands, much like Aruba;
+# Bonaire, Saba and St Eustatius would become directly part of the
+# Netherlands as Kingdom Islands.  This won't affect their time zones
+# though, as far as we know.
+#
+# Zone	NAME		STDOFF	RULES	FORMAT	[UNTIL]
+Zone	America/Curacao	-4:35:47 -	LMT	1912 Feb 12 # Willemstad
+			-4:30	-	-0430	1965
+			-4:00	-	AST
+
 # From Arthur David Olson (2011-06-15):
 # use links for places with new iso3166 codes.
 # The name "Lower Prince's Quarter" is both longer than fourteen characters
-# and contains an apostrophe; use "Lower_Princes"....
+# and contains an apostrophe; use "Lower_Princes" below.
+
 # From Paul Eggert (2021-05-06):
 # These backward-compatibility links now are in the 'backward' file.
 
@@ -1693,7 +1714,9 @@ Zone America/Paramaribo	-3:40:40 -	LMT	1911
 			-3:00	-	-03
 
 # Trinidad and Tobago
-# See America/Puerto_Rico.
+# Zone	NAME		STDOFF	RULES	FORMAT	[UNTIL]
+Zone America/Port_of_Spain -4:06:04 -	LMT	1912 Mar 2
+			-4:00	-	AST
 
 # Uruguay
 # From Paul Eggert (1993-11-18):
