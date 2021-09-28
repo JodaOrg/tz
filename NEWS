@@ -1,9 +1,10 @@
 News for the tz database
 
-Release 2021bfork2 - 2021-09-28 23:33:00 +0100
+Release 2021bfork3 - 2021-09-28 23:33:00 +0100
 
  Revert additions to backward that break users of Joda-Time
  Revert 9 link merges
+ (Took a few attempts to get a suitable version released)
  
 
 Release 2021b - 2021-09-24 16:23:00 -0700

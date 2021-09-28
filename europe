@@ -68,7 +68,7 @@
 #        0:00       GMT  BST  BDST  Greenwich, British Summer
 #        0:00       GMT  IST        Greenwich, Irish Summer
 #        0:00       WET  WEST WEMT  Western Europe
-s#        1:00       BST             British Standard (1968-1971)
+#        1:00       BST             British Standard (1968-1971)
 #        1:00       IST  GMT        Irish Standard (1968-) with winter DST
 #        1:00       CET  CEST CEMT  Central Europe
 #        1:00:14    SET             Swedish (1879-1899)
