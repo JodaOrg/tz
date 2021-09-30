@@ -1,10 +1,31 @@
 News for the tz database
 
+Unreleased, experimental changes
+
+  Briefly:
+    Revert most 2021b changes to 'backward'
+    Fix zic -b fat bug in pre-1970 32-bit data
+
+  Changes to Link directives' source files
+
+    Revert almost all of 2021b's changes to the 'backward' file,
+    by moving Link directives back to where they were in 2021a.
+    Although 'zic' doesn't care which source file contains a Link
+    directive, some downstream uses ran into trouble with the move.
+    (Problem reported by Stephen Colebourne for Joda-Time.)
+
+  Changes to code
+
+    Fix a bug in 'zic -b fat' that caused old timestamps to be
+    mishandled in 32-bit-only readers.  (Problem reported by Daniel
+    Fischer.)
+
+
 Release 2021bfork3 - 2021-09-28 23:33:00 +0100
 
- Revert additions to backward that break users of Joda-Time
- Revert 9 link merges
- (Took a few attempts to get a suitable version released)
+   Revert additions to backward that break users of Joda-Time
+   Revert 9 link merges
+   (Took a few attempts to get a suitable version released)
  
 
 Release 2021b - 2021-09-24 16:23:00 -0700
